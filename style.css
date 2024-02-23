@@ -1,0 +1,50 @@
+div {
+    border-radius: 10px;
+    border:  1px solid red;
+    background-color: lightpink;
+    color: red;
+}
+
+
+@media screen and (min-width : 1000px){
+    .container{
+        display: grid;
+        grid-template-columns:
+        1fr 1fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "education   education  language "
+        "skills experience experience";
+    }
+
+    #header {
+        grid-area: header;
+        background-color: #f4b7ef;
+        margin: 5px;
+        text-align: center;
+    }
+    
+    #experience {
+        grid-area: experience;
+        background-color: #f4b7ef;
+        margin: 5px;
+    }
+
+    #education {
+        grid-area: education;
+        background-color: #f4b7ef;
+        margin: 5px;
+    }
+    
+    #skills {
+        grid-area: skills;
+        background-color: #f4b7ef;
+        margin: 5px;
+    }
+
+    #langues {
+        grid-area: language;
+        background-color: #f4b7ef;
+        margin: 5px;
+    }
+}
